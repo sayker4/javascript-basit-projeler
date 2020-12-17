@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="">
+  <meta name="viewport" content="width=, initial-scale=">
+  <title></title>
+</head>
+<body>
+  <button onclick="selamla(30)">30</button><br>
+  <button onclick="selamla(40)">40</button><br>
+  <button onclick="selamla(50)">50</button><br>
+  <button onclick="selamla()">BOŞ</button><br>
+  <h1 id="baslik"></h1>
+  
+  <script>
+	function selamla(sayi){
+	  if(sayi === undefined){
+		document.getElementById("baslik").innerHTML = "Bu UNDEFINED değerdir!";
+	  }
+	  else{
+		document.getElementById("baslik").innerHTML = sayi;
+	  }
+	  console.log(sayi===undefined)
+	}
+  </script>
+</body>
+</html>

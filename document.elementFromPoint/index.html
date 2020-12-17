@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<body onclick="myFunction(event)">
+<h1>Click this Heading</h1>
+<p>Click this paragraph</p>
+<div>Click this div</div>
+<div id="a"></div>
+
+<script>
+function myFunction(event){
+ var xCoords = event.clientX;
+ var yCoords = event.clientY;
+ document.getElementById("a").innerHTML="Koordinatlar :"+xCoords+" "+yCoords;
+ 
+ elem = document.elementFromPoint(xCoords, yCoords);
+ 
+ if(elem.style.color == "red")
+  elem.style.color = "blue";
+ else
+  elem.style.color = "red";
+}
+</script>
+  </body>
+</html>

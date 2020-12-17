@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="" />
+    <meta name="viewport" content="width=, initial-scale=" />
+    <title></title>
+  </head>
+  <body>
+<script>
+function selamla() {
+  var element = document.createElement("p");
+  element.textContent = document.getElementById("inputAd").value;
+  document.body.appendChild(element);
+}
+</script>
+    <input id="inputAd" placeholder="Bugün Ne Yapacaksınız" /><br /><br />
+    <button onclick="selamla()">Ekle</button>
+    <h1>Bugün Yapılacaklar</h1>
+  </body>
+</html>
